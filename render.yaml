@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: amazon-ads-agent
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: AGENT_PASSWORD
+        sync: false
