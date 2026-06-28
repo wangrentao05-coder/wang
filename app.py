@@ -18,7 +18,7 @@ import pandas as pd
 
 
 APP_DIR = Path(__file__).resolve().parent
-ROOT = APP_DIR.parents[1]
+ROOT = APP_DIR.parent
 OUTPUTS = ROOT / "outputs"
 DATA_DIR = APP_DIR / "data"
 OUTPUTS.mkdir(exist_ok=True)
